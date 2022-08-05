@@ -1,0 +1,56 @@
+var characte1 = document.getElementById("cha4");
+var characte2 = document.getElementById("cha7");
+var maxwidth = document.getElementById("max-width");
+var count = 50;
+var counter = 2000;
+
+window.onkeydown = function () {
+  // console.log(event.keyCode);
+
+  if (event.keyCode == 68) {
+    characte1.src = "q1.gif";
+    count += 100;
+    characte1.style.left = count + "px";
+    setTimeout(function () {
+      characte1.src = "ch4.gif";
+    }, 1000);
+  }
+  console.log(count)
+  if (count > 1400) {
+    count = 1400;
+  };
+  if (event.keyCode == 65) {
+    characte1.src = "q2.gif";
+  count -= 100;
+  characte1.style.left = count + "px";
+  setTimeout(function () {
+    characte1.src = "ch4.gif";
+  }, 1000);
+}
+console.log(count)
+
+  if (count <= 50) {
+    count = 50;
+  };
+
+if (event.keyCode == 83) {
+  characte1.src = "crouch.gif";
+  counter = 400;
+  characte1.style.left = count + "px";
+  setTimeout(function () {
+    characte1.src = "ch4.gif";
+  }, 800);
+};
+console.log(counter)
+if (counter = 500){
+  counter = 500;
+};
+if (event.keyCode == 81){
+  characte1.src ="swap.gif";
+  count == 100;
+  characte1.style.left = count + "px";
+  setTimeout( function() {
+    characte1.src = "ch4.gif";
+  }, 1000);
+}
+};
